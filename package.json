@@ -1,0 +1,8 @@
+{
+  "name": "dv_campus_frontend",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.4"
+  }
+}
