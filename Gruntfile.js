@@ -36,6 +36,20 @@ module.exports = function(grunt) {
                     dest: 'pub/images'
                 }]
             }
+        },
+
+        watch: {
+            css: {
+                files: 'assets/dist/css/responsive-style.css',
+                tasks: ['postcss', 'cssmin'],
+                options: {
+                    livereload: true,
+                },
+            },
+            imagemin: {
+                files: 'assets/dist/images/**/*.{png, jpg, gif}',
+                tasks: ['imagemin']
+            },
         }
     });
 
@@ -43,7 +57,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['postcss', 'cssmin', 'imagemin']);
+    grunt.registerTask('default', ['postcss', 'cssmin', 'imagemin', 'watch']);
 
 };
