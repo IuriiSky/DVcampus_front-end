@@ -1,5 +1,5 @@
 body {
-    font-family: roboto;
+    font-family: roboto, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -105,7 +105,7 @@ a:hover {
 
 .logo {
     color: #1A1919;
-    font-family: Roboto;
+    font-family: roboto, sans-serif;
     font-weight: 400;
     font-size: 4em;
     text-align: center;
@@ -115,6 +115,8 @@ a:hover {
 .logo > span {
     color: #ff4500;
 }
+
+/* Main content*/
 
 .wrapper-for-img {
     position:relative;
@@ -322,9 +324,9 @@ figcaption {
     margin: 0 auto 40px;
 }
 
+.img-phone,
 .img-email,
-.img-location,
-.img-phone {
+.img-location {
     padding: 20px;
     width: 1.5em;
 }
