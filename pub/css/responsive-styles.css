@@ -63,7 +63,7 @@ a {
   display: block;
   width: 100%;
   padding: 10px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(0, 0, 0, 0.5);
@@ -114,7 +114,7 @@ a:hover {
   top: 40%;
 }
 .welcome-text p {
-  font-size: 3em;
+  font-size: 3.5vw;
   font-weight: 400;
   margin: 5px;
   padding: 5px 20px;
@@ -126,7 +126,7 @@ a:hover {
 .wrapper-text {
   background-color: #ff4500;
   color: #ffffff;
-  font-size: 3vw;
+  font-size: 18px;
   text-align: center;
   margin-top: -5px;
   padding: 30px 10px;
@@ -136,9 +136,9 @@ a:hover {
   text-decoration: underline;
 }
 .about-us h2 {
-  color: #1A1919;
-  font-size: 10vw;
-  font-weight: 600;
+  color: #000000;
+  font-size: 32px;
+  font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
   text-decoration: underline #ff4500;
@@ -146,7 +146,7 @@ a:hover {
 }
 .content {
   color: #b7b6b6;
-  font-size: 3.5vw;
+  font-size: 18px;
   margin: 25px auto;
   padding: 0 30px;
   text-align: center;
@@ -167,10 +167,10 @@ a:hover {
   margin: auto 10px;
   color: #b7b6b6;
   padding: 0 30px;
-  font-size: 4.1vw;
+  font-size: 18px;
 }
 .services-name {
-  font-size: 7vw;
+  font-size: 32px;
   font-weight: 400;
   margin: 20px auto;
 }
@@ -180,7 +180,7 @@ a:hover {
 .img-wrap {
   min-height: 165px;
   min-width: 250px;
-  margin: 16%;
+  margin: 10%;
 }
 .portfolio {
   text-align: center;
@@ -188,13 +188,13 @@ a:hover {
 .portfolio > h2 {
   color: #1A1919;
   display: inline-block;
-  font-size: 7vw;
+  font-size: 32px;
   margin: 50px 0 auto;
   text-align: center;
   border-bottom: 2px solid #ff4500;
 }
 .portfolio > p {
-  font-size: 4.1vw;
+  font-size: 18px;
   padding: 0 20px;
   color: #b7b6b6;
 }
@@ -218,14 +218,14 @@ figcaption {
   margin-top: 0;
 }
 .talk-to-us {
-  height: 440px;
+  height: auto;
   width: 100%;
   background-color: #7a7a7a;
   text-align: center;
 }
 .talk-to-us > h2 {
   color: #ffffff;
-  font-size: 4em;
+  font-size: 70px;
   text-transform: capitalize;
   padding: 70px 60px 20px;
 }
@@ -234,7 +234,7 @@ figcaption {
 }
 .talk-to-us > p {
   color: #ffffff;
-  font-size: 1.36em;
+  font-size: 22px;
   padding: 20px 20px 0;
 }
 .contact-description {
@@ -244,14 +244,14 @@ figcaption {
 .contact-description > h2 {
   display: inline-block;
   border-bottom: 2px solid #ff4500;
-  font-size: 3em;
+  font-size: 36px;
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 0;
 }
 .contact-description > p {
   color: #7a7a7a;
-  font-size: 1.4em;
+  font-size: 22px;
   padding: 50px 40px;
   margin-bottom: 50px;
   margin-top: 0;
@@ -261,7 +261,7 @@ figcaption {
   text-align: center;
 }
 .contact-details > h2 {
-  font-size: 8vw;
+  font-size: 38px;
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -284,7 +284,7 @@ figcaption {
 .location {
   display: flex;
   justify-content: center;
-  font-size: 5vw;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 .phone > p,
@@ -293,6 +293,9 @@ figcaption {
   text-align: start;
   color: #7a7a7a;
   margin: auto 30px;
+}
+.location {
+  margin: 0 50px 0 85px;
 }
 #contact input[type="text"],
 #contact input[type="email"],
@@ -324,10 +327,10 @@ figcaption {
   color: #ffffff;
   margin: 20px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 16px;
 }
 #contact button[type="submit"]:hover {
-  background-color: #d6441c;
+  background-color: #ff4500;
   transition: background-color 0.3s ease-in-out;
 }
 .text-footer {
@@ -335,8 +338,124 @@ figcaption {
   line-height: 50px;
   background-color: #ff4500;
   color: #ffffff;
-  font-size: 3vw;
+  font-size: 18px;
   height: 50px;
   margin: 150px auto 100px;
+}
+@media screen and (min-width: 770px) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+  }
+  .wrapper {
+    max-height: 0;
+  }
+  .logo {
+    font-size: 2em;
+    flex-basis: 25%;
+    margin: 30px 50px;
+  }
+  label,
+  .burger-line {
+    display: none;
+  }
+  .main-menu {
+    font-size: 16px;
+    overflow: visible;
+  }
+  .menu {
+    display: flex;
+    margin-top: 40px;
+  }
+  .menu > li {
+    margin-left: 20px;
+  }
+  a {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 0 2px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
+  }
+  a:hover {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 0;
+  }
+  .content {
+    width: 77%;
+    line-height: 30px;
+  }
+  .underline {
+    display: none;
+  }
+  .services,
+  .portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .services-wrapper {
+    flex: 1 0 50%;
+    margin-top: 50px;
+  }
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .portfolio > p {
+    margin: 50px;
+    padding: 0 40px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .img-wrap {
+    flex-basis: 30%;
+    margin: 5%;
+  }
+  .talk-to-us > p {
+    line-height: 30px;
+    padding-bottom: 50px;
+  }
+  .contact-description {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact-description > p {
+    padding: 20px 0 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .contact-details > span {
+    display: none;
+  }
+  .contact-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact-information > .location {
+    flex-grow: 10;
+    order: -1;
+    padding: 50px 20% 10px;
+  }
+  .phone > p,
+  .email > p,
+  .location > p {
+    margin-left: 0;
+  }
+  .location {
+    margin: 0 auto;
+  }
+  #contact {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=responsive-styles.css.map */
