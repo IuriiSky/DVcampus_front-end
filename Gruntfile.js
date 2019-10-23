@@ -30,20 +30,6 @@ module.exports = function(grunt) {
             }
         },
 
-        cssmin: {
-            options: {
-                mergeIntoShorthands: false,
-                roundingPrecision: -1
-            },
-            target: {
-                files: {
-                    'pub/css/responsive-styles.min.css': [
-                        'assets/dist/css/responsive-styles-processed.css'
-                    ]
-                }
-            }
-        },
-
         postcss: {
             dev: {
                 options: {
@@ -68,7 +54,7 @@ module.exports = function(grunt) {
                     ]
                 },
                 src: 'assets/dist/css/responsive-styles.css',
-                dest: 'assets/dist/css/responsive-styles-processed.css'
+                dest: 'pub/css/responsive-styles.min.css'
             }
         },
 
@@ -103,7 +89,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-postcss');
-    grunt.loadNpmTasks('grunt-postcss-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
 

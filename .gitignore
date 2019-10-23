@@ -5,8 +5,10 @@
 /var/log/*
 !/var/log/.gitkeep
 
-#####
-/assets/dist/css/responsive-style-processed.css
-/pub/css/responsive-style.min.css
+# Ignore generated files. Note that we do not have build system, so this is for demo and further development.
+/assets/dist/css/*
+!/assets/dist/css/.gitkeep
+/pub/css/*
+!/pub/css/styles.css
 /pub/images/*
 !/pub/images/.gitkeep
